@@ -5,9 +5,9 @@ async function readFile(path: string): Promise<string> {
   return await Deno.readTextFile(new URL(path, import.meta.url));
 }
 
-const text = readFile("./assets/people.json")
+const text = readFile("./assets/people.json");
 
-text.then(response => console.log(response));
+text.then((response) => console.log(response));
 
 function readJson(path: string): object {
   const file = fromFileUrl(new URL(path, import.meta.url));

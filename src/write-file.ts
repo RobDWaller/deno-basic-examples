@@ -1,4 +1,7 @@
-import { ensureFileSync, writeJsonSync } from "https://deno.land/std@0.61.0/fs/mod.ts";
+import {
+  ensureFileSync,
+  writeJsonSync,
+} from "https://deno.land/std@0.61.0/fs/mod.ts";
 
 async function writeFile(path: string, text: string): Promise<void> {
   return await Deno.writeTextFile(path, text);
@@ -14,9 +17,9 @@ function writeJson(path: string, data: object): string {
     writeJsonSync(path, data);
 
     return "Written to " + path;
-  } catch(e) {
+  } catch (e) {
     return e.message;
   }
 }
 
-console.log(writeJson("./build/data.json", {hello: "World"}));
+console.log(writeJson("./build/data.json", { hello: "World" }));
