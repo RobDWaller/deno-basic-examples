@@ -6,7 +6,7 @@ Deno is a secure runtime for both JavaScript and TypeScript. As the hello world 
 
 In this JavaScript example we print the message `Hello [name]` to the console and we ensure the name provided is capitalized. 
 
-**Command:** `deno run src/hello-world/hello-world.js`
+**Command:** `deno run src/hello-world/index.js`
 
 ```js
 function capitalize(word) {
@@ -36,7 +36,7 @@ This TypeScript example is exactly the same as the JavaScript example above, the
 
 The `deno run` command is exactly the same, it just references a `*.ts` file rather than a `*.js` file.
 
-**Command:** `deno run src/hello-world/hello-world.ts`
+**Command:** `deno run src/hello-world/index.ts`
 
 ```ts
 function capitalize(word: string): string {
