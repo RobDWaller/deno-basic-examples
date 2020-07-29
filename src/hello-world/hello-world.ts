@@ -9,3 +9,11 @@ function hello(name: string): string {
 console.log(hello("john"));
 console.log(hello("Sarah"));
 console.log(hello("kai"));
+
+/** 
+ * Output:
+ * 
+ * Hello John
+ * Hello Sarah
+ * Hello Kai
+**/ 
