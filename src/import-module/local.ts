@@ -1,4 +1,4 @@
-import { add, multiply } from "./modules/arithmetic.ts";
+import { add, multiply } from "../modules/arithmetic.ts";
 
 function totalCost(outbound: number, inbound: number, tax: number): number {
   return multiply(add(outbound, inbound), tax);
